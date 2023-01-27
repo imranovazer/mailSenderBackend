@@ -46,7 +46,7 @@ app.post("/api/email", (req, res) => {
 
 })
 
-app.listen(PORT, () => {
-    console.log(`App running on port ${PORT}`);
+app.listen(process.env.PORT || PORT, () => {
+    console.log(`App running...`);
 })
 
