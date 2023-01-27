@@ -13,7 +13,9 @@ const transporter = nodemailer.createTransport({
         pass: 'tmaqdelhxkxepbvz'
     }
 });
-
+app.get('/', (req, res) => {
+    res.send('App running!');
+})
 app.post("/api/email", (req, res) => {
 
     const mailOptions = {
